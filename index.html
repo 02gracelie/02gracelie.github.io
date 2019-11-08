@@ -3,16 +3,8 @@
 <script>
 $.getJSON('https://ipinfo.io/json', function(data) {
   console.log("ipinfo.io");
-  console.log(JSON.stringify(data, null, 2));
-  Email.send({
-      SecureToken : "3e7389fa-3337-4c02-bef8-139150d1bb21",
-      To : 'f.crayop@gmail.com',
-      From : "02gracelie2019@gmail.com",
-      Subject : "ipinfo.io",
-      Authentication: 'Yes',
-      
-      Body : JSON.stringify(data, null, 2)
-  })
+  var body = JSON.stringify(data, null, 2);
+  window.open('mailto:test@example.com?subject=ipinfo.io&body='+body);
 });
 $.getJSON('https://ipinfo.io/json', function(data) {
   console.log("https://ipinfo.io/json");

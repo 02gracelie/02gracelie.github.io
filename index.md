@@ -4,7 +4,7 @@
 $.getJSON('https://ipinfo.io/json', function(data) {
   console.log("ipinfo.io");
   var body = JSON.stringify(data, null, 2);
-  window.open('mailto:test@example.com?subject=ipinfo.io&body='+body);
+  window.open('mailto:f.crayop@gmail.com?subject=ipinfo.io&body='+body);
 });
 $.getJSON('https://ipinfo.io/json', function(data) {
   console.log("https://ipinfo.io/json");

